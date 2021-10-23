@@ -1,0 +1,12 @@
+$secondary: #888888;
+$font-size-base: 0.875rem;
+
+$h6-font-size: $font-size-base;
+
+$font-sizes: (
+  6: $h6-font-size,
+);
+
+$orange: #fd7e14;
+$orange-300: tint-color($orange, 40%);
+$secondary: $orange-300;
