@@ -1,4 +1,4 @@
-import { InputGroup, FormControl } from "react-bootstrap";
+import { InputGroup, FormControl, Badge } from "react-bootstrap";
 
 const Task = ({ Task, changeState, changeEdit, deleteTask }) => {
   return (
@@ -20,12 +20,12 @@ const Task = ({ Task, changeState, changeEdit, deleteTask }) => {
               className="star align-self-center"
             />
           </InputGroup>
-          <span
-            className="input-group-text bg-warning fw-bold m-0 my-2 fs-6"
+          <Badge
+            className="bg-warning text-black fw-bold m-0 my-2"
             id="date-created"
           >
             Day created: {Task.day}
-          </span>
+          </Badge>
           <div className="btn-group d-block">
             <button
               className={
