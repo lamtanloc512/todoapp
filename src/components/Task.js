@@ -17,6 +17,7 @@ const Task = ({ Task, changeState, changeEdit, deleteTask }) => {
             <InputGroup.Checkbox
               defaultChecked={Task.isDone}
               onClick={() => changeState(Task.id)}
+              className="star align-self-center"
             />
           </InputGroup>
           <span

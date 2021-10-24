@@ -9,3 +9,28 @@ ul,
 li {
   list-style: none;
 }
+
+.star {
+  visibility: hidden;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+.star:before {
+  content: "\2605";
+  position: absolute;
+  visibility: visible;
+  top: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
+}
+.star:checked:before {
+  content: "\2606";
+  position: absolute;
+  top: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
+}
