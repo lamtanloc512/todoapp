@@ -2,10 +2,6 @@ import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 
 const Header = ({ addTodo }) => {
-  const currentDay = new Date().toLocaleDateString();
-  console.log(currentDay);
-  // eslint-disable-next-line
-  const [day, setDay] = useState(currentDay);
   const [task, setTask] = useState("");
   const [isDone, setIsDone] = useState(false);
   const [isEdit, setIsEdit] = useState(true);
@@ -17,7 +13,7 @@ const Header = ({ addTodo }) => {
     }
     setIsDone(false);
     setIsEdit(true);
-    addTodo({ task, day, isDone, isEdit });
+    addTodo({ task, isDone, isEdit });
     setTask("");
   };
   return (
